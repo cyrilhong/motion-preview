@@ -241,6 +241,13 @@ a:hover{
         line-height: 1.2;
     }
 }
+.sections{
+    div{
+        border: 1px solid red;
+        height: 400px;
+        top: 0;
+    }
+}
 .footer{
     background-color: #000;
     text-align: center;

@@ -1,7 +1,7 @@
 {
-  "name": "kiangi",
+  "name": "motion",
   "version": "1.0.0",
-  "description": "kiangi website",
+  "description": "motion website",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
