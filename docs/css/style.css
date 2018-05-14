@@ -436,9 +436,17 @@ a:hover {
     width: 100%; }
   .func-btn p {
     font-size: 11pt; }
+  .func-btn img {
+    padding: 10px; }
   .sections {
     display: inline-block; }
   .comment .img {
     margin-right: 15px; }
   .comment .comment-block {
-    width: 70%; } }
+    width: 70%; }
+  .comment-wrapper {
+    padding: 10px; }
+    .comment-wrapper img {
+      zoom: 80%; }
+  .rant-wrapper img {
+    zoom: 80%; } }

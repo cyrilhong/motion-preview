@@ -529,6 +529,10 @@ a:hover{
         p{
             font-size: 11pt;
         }
+
+        img{
+            padding: 10px;
+        }
     }
     .sections{
         display: inline-block;
@@ -539,6 +543,17 @@ a:hover{
         }
         .comment-block{
             width: 70%;
+        }
+    }
+    .comment-wrapper{
+        padding: 10px;
+        img{
+            zoom:80%;
+        }
+    }
+    .rant-wrapper{
+        img{
+            zoom: 80%;
         }
     }
 }
