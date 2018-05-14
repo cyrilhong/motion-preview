@@ -138,7 +138,7 @@ a:hover {
       font-weight: 300; }
 
 .desktop-menu {
-  color: #fff;
+  background-color: #fff;
   padding: 10px 0; }
   .desktop-menu a {
     color: #000;
@@ -167,7 +167,8 @@ a:hover {
 
 .header {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
   .header .active span {
     text-decoration: underline !important; }
 
@@ -200,10 +201,185 @@ a:hover {
   width: 517px;
   line-height: 1.2; }
 
-.sections div {
-  border: 1px solid red;
-  height: 400px;
-  top: 0; }
+.sections {
+  display: flex; }
+  .sections div {
+    top: 0; }
+  .sections h3 {
+    margin-top: 10px; }
+  .sections .more {
+    float: right;
+    margin-top: -40px; }
+
+.third {
+  flex: 2;
+  padding-right: 10px;
+  webkit-flex: 2; }
+
+.one {
+  padding-right: 10px;
+  flex: 1;
+  webkit-flex: 1; }
+
+.border {
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 1px;
+  margin-top: 15px; }
+
+.border::after {
+  border-top: 3px solid gray;
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  top: -14px;
+  position: relative;
+  content: ''; }
+
+.community .block {
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.community .head {
+  width: 60px;
+  height: 60px;
+  clip-path: circle(30px at center); }
+  .community .head img {
+    width: 60px;
+    height: 60px; }
+
+.community .name {
+  display: inline-block;
+  margin-left: 10px; }
+
+.community .time {
+  float: right;
+  margin-top: 15px; }
+
+.community .message {
+  width: 100%;
+  display: block;
+  font-weight: 500;
+  padding: 10px 0; }
+
+.community .social-block {
+  width: 100%;
+  display: block; }
+  .community .social-block a {
+    margin-right: 30px; }
+  .community .social-block i {
+    color: #717479; }
+  .community .social-block p {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10pt; }
+  .community .social-block .fa-thumbs-up {
+    color: green; }
+  .community .social-block .fa-thumbs-down {
+    color: red; }
+
+.news .news-wraper {
+  background-color: #F2F2F2;
+  padding: 10px;
+  margin-bottom: 10px; }
+  .news .news-wraper .new-block {
+    width: 100%;
+    display: inline-block; }
+  .news .news-wraper a {
+    float: left; }
+  .news .news-wraper p {
+    float: right; }
+
+.comment .comment-wrapper {
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+  display: inline-block; }
+
+.comment .img {
+  display: inline-block;
+  width: 20%;
+  float: left; }
+
+.comment .comment-block {
+  display: inline-block;
+  width: 80%;
+  float: left; }
+
+.comment h4 {
+  padding: 0;
+  margin: 0; }
+
+.comment span {
+  float: right;
+  color: gray;
+  margin-bottom: 10px; }
+
+.rank .rant-wrapper {
+  border-bottom: 1px solid #E3E3E3;
+  padding: 15px 0; }
+
+.rank .medal {
+  top: 0;
+  display: inline-block; }
+  .rank .medal img {
+    width: 65px; }
+
+.rank .img {
+  top: 0;
+  display: inline-block;
+  margin-left: 5px; }
+  .rank .img img {
+    width: 65px; }
+
+.rank .description {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px; }
+  .rank .description h5 {
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-size: 14pt; }
+  .rank .description span {
+    font-size: 11pt;
+    display: block; }
+
+.rank .rankings {
+  display: inline-block;
+  font-size: 9pt;
+  margin-top: 5px; }
+  .rank .rankings i {
+    margin-right: 5px;
+    color: #169AD4; }
+
+.rank .points {
+  display: inline-block; }
+  .rank .points p {
+    font-size: 9pt; }
+
+.rank .download {
+  float: right; }
+  .rank .download .btn {
+    height: 30px;
+    width: 70px;
+    float: right; }
+    .rank .download .btn p {
+      font-size: 9pt; }
+  .rank .download .counts {
+    text-align: center; }
+    .rank .download .counts p {
+      font-size: 9pt;
+      padding: 5px 0;
+      display: inline-block; }
+
+.video .video-wrapper {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px 10px 0; }
+  .video .video-wrapper img {
+    width: 100%; }
 
 .footer {
   background-color: #000;
@@ -221,3 +397,22 @@ a:hover {
   .footer img {
     vertical-align: middle;
     margin-right: 20px; }
+
+.qrcode {
+  background-color: #F2F2F2; }
+  .qrcode img {
+    width: 40%;
+    margin: 20px 0 0 20px; }
+  .qrcode h4 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px; }
+  .qrcode .qrcode-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    padding: 10px; }
+    .qrcode .qrcode-info p {
+      text-align: left; }
