@@ -425,6 +425,8 @@ a:hover {
       text-align: left; }
 
 @media (min-width: 320px) and (max-width: 640px) {
+  h3 {
+    margin-left: 10px; }
   .desktop-menu {
     padding: 15px; }
   .welfare .img {
@@ -435,4 +437,8 @@ a:hover {
   .func-btn p {
     font-size: 11pt; }
   .sections {
-    display: inline-block; } }
+    display: inline-block; }
+  .comment .img {
+    margin-right: 15px; }
+  .comment .comment-block {
+    width: 70%; } }

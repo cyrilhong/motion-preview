@@ -510,6 +510,9 @@ a:hover{
     }
 }
 @media (min-width: 320px) and (max-width: 640px) {
+    h3{
+        margin-left: 10px;
+    }
     .desktop-menu{
         padding: 15px;
     }
@@ -529,5 +532,13 @@ a:hover{
     }
     .sections{
         display: inline-block;
+    }
+    .comment{
+        .img{
+            margin-right: 15px;
+        }
+        .comment-block{
+            width: 70%;
+        }
     }
 }
