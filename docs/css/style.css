@@ -171,12 +171,17 @@ a:hover {
   z-index: 10; }
   .header .active span {
     text-decoration: underline !important; }
+  .header .input {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle; }
 
 .banner img {
   width: 100%; }
 
 .index-content {
-  padding: 102px 0 60px 0; }
+  padding: 102px 0 100px 0;
+  position: relative; }
 
 .func-btn .col-xs-4 {
   text-align: center;
@@ -190,8 +195,12 @@ a:hover {
   margin-top: 5px;
   font-weight: bold; }
 
-.welfare img {
-  width: 100%; }
+.welfare .img {
+  width: 100%;
+  height: 150px;
+  background-image: url("../img/public-welfare.png");
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .welfare h2 {
   position: absolute;
@@ -203,8 +212,6 @@ a:hover {
 
 .sections {
   display: flex; }
-  .sections div {
-    top: 0; }
   .sections h3 {
     margin-top: 10px; }
   .sections .more {
@@ -416,3 +423,16 @@ a:hover {
     padding: 10px; }
     .qrcode .qrcode-info p {
       text-align: left; }
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .desktop-menu {
+    padding: 15px; }
+  .welfare .img {
+    height: 120px; }
+  .welfare h2 {
+    font-size: 18pt;
+    width: 100%; }
+  .func-btn p {
+    font-size: 11pt; }
+  .sections {
+    display: inline-block; } }
