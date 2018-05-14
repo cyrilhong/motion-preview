@@ -1,0 +1,34 @@
+{
+  "name": "kiangi",
+  "version": "1.0.0",
+  "description": "kiangi website",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cache-bust": "^1.1.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-open": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "tiny-lr": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cyrilhong@bitbucket.org/cyrilhong/kiangi.git"
+  },
+  "keywords": [
+    "kiangi"
+  ],
+  "author": "cyrilhong",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cyrilhong/kiangi#readme"
+}

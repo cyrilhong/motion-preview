@@ -1,0 +1,42 @@
+extends frame
+block append content
+	.index-content
+		.banner
+			.container
+				.row
+					img(src="img/banner1.jpg", alt="bannner")
+		.func-btn
+			.container
+				.row
+					.col-xs-4
+						a(href="#")
+							img(src="img/btn1.png", alt="btn")
+							p 了解MTN
+					.col-xs-4
+						a(href="#")
+							img(src="img/btn2.png", alt="btn")
+							p 免费得到MTN
+					.col-xs-4
+						a(href="#")
+							img(src="img/btn3.png", alt="btn")
+							p 兑换礼包
+		.welfare
+			.container
+				.row
+					img(src="img/public-welfare.png", alt="welfare")
+					h2 平台收入10% 将会捐赠公益机构 在游戏过程中 就可以让世界更美好
+		.landing
+			.container
+				h1 Lift Content Value to a 
+					span  Whole New Level
+				h3 Boost both User Engagement and Income with KiànGīz
+		#content
+			block content-section
+		#video-demo
+			block video-demo
+		#partners
+			.container
+		#features
+			block features 
+		#contact
+			block contact

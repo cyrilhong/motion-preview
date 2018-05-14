@@ -1,0 +1,428 @@
+html {
+  font-size: 100%;
+  transition: all 1s ease-out; }
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: #0FA7AB;
+  font-weight: 300;
+  text-align: left;
+  transition: all 0.5s ease;
+  /* Other transform properties here */ }
+
+h1, h2, h3, h4, p, a {
+  font-family: 'Montserrat', sans-serif;
+  line-height: initial; }
+
+h1 {
+  font-weight: normal;
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1rem;
+  font-weight: 300; }
+
+ul {
+  padding-left: 0; }
+
+ul > li {
+  list-style: none;
+  display: inline-block; }
+
+a {
+  cursor: pointer;
+  text-decoration: none !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+#menu {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  font-size: 14pt;
+  margin-top: 10px; }
+  #menu a {
+    color: #fff;
+    margin-right: 60px; }
+  #menu i {
+    margin-right: 5px; }
+  #menu .menu-section {
+    float: right; }
+
+#header-menu {
+  top: -64px;
+  position: relative;
+  z-index: 100; }
+  #header-menu .menu, #header-menu .menu-bg, #header-menu .menu-burger {
+    position: absolute;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 0;
+    right: 25px; }
+  #header-menu .menu-bg {
+    pointer-events: none;
+    transition: .3s;
+    right: 50px;
+    top: 50px;
+    transform: translate3d(50%, -50%, 0);
+    transform-origin: center center; }
+    #header-menu .menu-bg.fs {
+      transform: translate3d(50%, -50%, 0);
+      width: 300vw;
+      height: 300vw; }
+  #header-menu .menu-burger {
+    -webkit-user-select: none;
+    cursor: pointer;
+    transition: .4s;
+    transform-origin: center;
+    top: 0px;
+    color: #fff; }
+    #header-menu .menu-burger.fs {
+      transform: rotate(-180deg) translateY(10px);
+      color: #0FA7AB;
+      z-index: 10;
+      position: fixed;
+      top: 15px; }
+  #header-menu .menu-items.fs {
+    opacity: 1;
+    z-index: 2 !important; }
+  #header-menu .menu-items {
+    position: absolute;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: .4s;
+    margin-top: 100px;
+    transform: translateY(-200%);
+    pointer-events: none; }
+    #header-menu .menu-items a {
+      transition: 1s;
+      opacity: 0;
+      margin-top: 0px;
+      display: block;
+      text-decoration: none;
+      color: #0FA7AB; }
+    #header-menu .menu-items.fs {
+      transform: translateY(0);
+      pointer-events: auto;
+      background: #fff;
+      opacity: 1;
+      top: -100px;
+      position: fixed;
+      height: 100%;
+      padding-top: 35px;
+      z-index: 1; }
+      #header-menu .menu-items.fs a {
+        opacity: 1;
+        margin-top: 15px;
+        color: #0FA7AB;
+        border-bottom: 1px solid #0FA7AB;
+        padding-bottom: 15px; }
+    #header-menu .menu-items .lan {
+      color: #0FA7AB;
+      width: 100%;
+      border-bottom: 1px solid #0FA7AB; }
+      #header-menu .menu-items .lan a, #header-menu .menu-items .lan span {
+        display: inline-block;
+        border-bottom: 0; }
+    #header-menu .menu-items span, #header-menu .menu-items .lan {
+      font-size: 16pt;
+      font-weight: 300; }
+
+.desktop-menu {
+  color: #fff;
+  float: right;
+  font-size: 14pt;
+  margin-top: 10px;
+  margin-right: 100px; }
+  .desktop-menu a {
+    color: #fff;
+    margin-left: 70px;
+    font-weight: 300; }
+  .desktop-menu i {
+    margin-right: 5px; }
+  .desktop-menu .menu-section {
+    float: right; }
+  .desktop-menu .lan {
+    color: #fff;
+    margin-left: 70px;
+    font-weight: 300;
+    display: inline; }
+    .desktop-menu .lan a {
+      padding: 0;
+      margin: 0; }
+    .desktop-menu .lan a:hover {
+      text-decoration: underline; }
+
+.header {
+  margin: 15px 0; }
+  .header .active span {
+    text-decoration: underline !important; }
+  .header .lan .active {
+    background-color: #fff;
+    padding: 2px 5px;
+    color: #0FA7AB;
+    margin-right: 5px; }
+  .header .lan .eng {
+    margin-right: 5px; }
+  .header .lan .zh {
+    margin-left: 5px; }
+
+.menu-section {
+  display: none; }
+
+.logo {
+  display: inline-block;
+  width: 152px;
+  height: 47px;
+  background-size: cover;
+  z-index: 100;
+  position: relative; }
+  .logo a {
+    background-image: none; }
+
+.footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0; }
+  .footer img {
+    height: 26px;
+    margin: 10px; }
+  .footer p {
+    font-size: 1rem;
+    color: #fff; }
+  .footer .logo {
+    width: 84px;
+    height: 26px;
+    background-size: cover;
+    margin-top: 10px; }
+
+.index-content div h1 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 40px; }
+
+.index-content div .row {
+  margin-top: 60px; }
+
+.landing {
+  height: 100vh; }
+  .landing .container h1 {
+    font-size: 6vw;
+    line-height: 1;
+    color: #fff;
+    margin-top: 25vh;
+    line-height: 1;
+    text-align: left;
+    border-bottom: 0; }
+    .landing .container h1 span {
+      color: #00FF3B;
+      border-bottom: 1px solid #00FF3B;
+      line-height: 1.2; }
+  .landing h3 {
+    color: #8DFCFF;
+    font-size: 18pt;
+    font-weight: 300; }
+
+#content {
+  background-color: #29D9C2;
+  height: auto;
+  padding-bottom: 80px; }
+  #content .row {
+    margin-top: 0px; }
+  #content .flexbox {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: flex-end;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    align-items: end;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: flex;
+    align-items: stretch; }
+  #content .content-item {
+    width: 31%;
+    background-color: #0FA7AB;
+    padding: 20px 20px 85px 20px;
+    color: #fff;
+    margin-right: 2.3%;
+    position: relative;
+    margin-top: 20px; }
+    #content .content-item img {
+      display: inline-block;
+      width: 100%; }
+    #content .content-item button {
+      background-color: gray; }
+    #content .content-item .btn-wraperr {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      padding-right: 37px; }
+  #content .content-item:nth-child(3) {
+    margin-right: 0; }
+  #content .content-item-01 {
+    width: 100%;
+    height: 330px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/3471671/516344962/stock-vector-red-darts-target-arrow-success-aim-icon-target-vector-illustration-516344962.jpg"); }
+  #content .content-item-02 {
+    width: 100%;
+    height: 330px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://thumb9.shutterstock.com/display_pic_with_logo/2324765/670210708/stock-photo-concentrated-afro-american-editor-checking-email-box-while-waiting-feedback-from-readers-of-popular-670210708.jpg"); }
+  #content .content-item-03 {
+    width: 100%;
+    height: 330px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://thumb1.shutterstock.com/display_pic_with_logo/1587119/445925509/stock-vector-online-marketing-via-social-media-and-instant-messenger-as-concept-for-monetization-with-smart-phone-445925509.jpg"); }
+  #content button {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 0;
+    background: #fff !important;
+    border: 0;
+    color: #0FA7AB;
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 48px;
+    box-shadow: 0 8px 0px #29D9C2;
+    transition: all .1s ease-out;
+    padding-right: 58px;
+    padding-left: 10px;
+    margin-bottom: 10px; }
+  #content button:active {
+    box-shadow: 0 1px 0px #29D9C2;
+    transition: all .1s ease-out; }
+  #content button.active {
+    box-shadow: 0 1px 0px #29D9C2;
+    transition: all .1s ease-out; }
+  #content button::after {
+    content: "\f0a9";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 2rem;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 15px;
+    color: #fff; }
+  #content button::before {
+    background-color: rgba(7, 45, 32, 0.65);
+    position: absolute;
+    right: 0;
+    height: 56px;
+    width: 56px;
+    top: 0;
+    content: '';
+    transition: all .1s ease-out; }
+  #content button:active::before {
+    height: 48px;
+    transition: all .1s ease-out; }
+
+#video-demo {
+  padding-bottom: 40px; }
+  #video-demo h1 {
+    border-bottom: 0; }
+  #video-demo .video {
+    position: relative;
+    margin: 20px 0; }
+    #video-demo .video img {
+      width: 100%; }
+    #video-demo .video #mac {
+      background-image: url(../img/mac.png);
+      width: 100%;
+      height: 716px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      left: 50%;
+      max-width: 1220px;
+      right: 50%;
+      background-position-y: center;
+      cursor: pointer; }
+      #video-demo .video #mac .play {
+        position: relative;
+        left: 50%;
+        width: 100%;
+        max-width: 1220px;
+        /* top: 44%; */
+        height: 100%;
+        left: 25%;
+        vertical-align: middle;
+        text-align: center;
+        left: 0;
+        right: 50%; }
+        #video-demo .video #mac .play i {
+          top: 44%;
+          position: absolute; }
+      #video-demo .video #mac .play:hover i {
+        color: #fff; }
+    #video-demo .video #iphone {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      display: inline-block;
+      cursor: pointer;
+      width: 250px;
+      height: 483px;
+      z-index: 10;
+      left: 72%; }
+      #video-demo .video #iphone .play {
+        position: relative;
+        /* left: 50%; */
+        width: 250px;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center; }
+        #video-demo .video #iphone .play i {
+          position: relative; }
+    #video-demo .video #iphone:hover i {
+      color: #fff; }
+    #video-demo .video i {
+      color: #0FA7AB;
+      font-size: 3rem; }
+
+.modal-dialog {
+  width: 805px;
+  top: 25vh; }
+  .modal-dialog .modal-body {
+    position: absolute;
+    padding: 15px;
+    width: 805px;
+    height: 450px;
+    /* width: 100%; */ }
+  .modal-dialog iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
