@@ -210,8 +210,9 @@ a:hover {
   color: #fff;
   margin-top: -106px;
   padding: 10px 10px;
-  width: 517px;
-  line-height: 1.2; }
+  width: 530px;
+  line-height: 1.2;
+  font-size: 1.7vw; }
 
 .sections {
   display: flex; }
@@ -454,6 +455,17 @@ a:hover {
   .indicators .active {
     background-color: #FFCD58 !important; }
 
+.btn-primary {
+  background-color: #337ab7 !important;
+  border-color: #2e6da4 !important; }
+  .btn-primary p {
+    right: 8px;
+    margin-top: 6px; }
+
+@media (min-width: 640px) and (max-width: 1280px) {
+  .welfare h2 {
+    font-size: 18pt !important; } }
+
 @media (min-width: 320px) and (max-width: 640px) {
   h3 {
     margin-left: 10px; }
@@ -462,7 +474,8 @@ a:hover {
   .welfare .img {
     height: 120px; }
   .welfare h2 {
-    font-size: 18pt;
+    width: 320px !important;
+    font-size: 14pt !important;
     width: 100%; }
   .func-btn p {
     font-size: 11pt; }
