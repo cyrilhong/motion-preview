@@ -2,9 +2,17 @@ extends frame
 block append content
 	.index-content
 		.banner
+			//- .container
+			//- 	.row
+			//- 		img(src="img/banner1.jpg", alt="bannner")
 			.container
-				.row
-					img(src="img/banner1.jpg", alt="bannner")
+				.row.no-margin
+					.slider
+						ul.slides
+							li
+								img(src='img/banner1.jpg', alt='slide01')
+							li
+								img(src='img/banner2.jpg', alt="slide02")
 		.func-btn
 			.container
 				.row
@@ -32,7 +40,7 @@ block append content
 						.border
 						h3 论坛热帖
 						.more
-							a(href="#")更多 >
+							a(href="#")更多>
 						.community-block
 							.block
 								a(href="#").head
@@ -101,7 +109,7 @@ block append content
 						.border
 						h3 最新资讯
 						.more
-							a(href="#")更多 >
+							a(href="#")更多>
 						.news-wraper
 							.new-block
 								a(href="#")【新闻】《梦幻西游》微信公众号特别礼包已开公众号端午节特别礼包
@@ -125,7 +133,7 @@ block append content
 						.border
 						h3 游戏评测
 						.more
-							a(href="#")更多 >
+							a(href="#")更多>
 						.comment-wrapper
 							.img
 								img(src="img/game-icon.png", alt="game-img")
@@ -147,7 +155,7 @@ block append content
 						.border
 						h3 排行榜
 						.more
-							a(href="#")更多 >
+							a(href="#")更多>
 						.rant-wrapper
 							.medal
 								img(src="img/gold-medal-icon.jpeg", alt="gold-medal")
@@ -258,7 +266,7 @@ block append content
 						.border
 						h3 游戏视频
 						.more
-							a(href="#")更多 >
+							a(href="#")更多>
 						.video-wrapper
 							img(src="img/video_01.png", alt="video")
 						.video-wrapper
