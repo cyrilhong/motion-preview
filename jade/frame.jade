@@ -29,14 +29,26 @@ html(lang='en')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js')
 		
 		//sldieshow
-		title Motion
+		title Login
 	body
-		include ./header.jade
+		//- include ./header.jade
 		main#panel
 			#frame
 				block content
-				include ./footer.jade
+				//- include ./footer.jade
 script.
-		$(document).ready(function(){
-			$('.slider').slider();
+	$( document ).ready(function() {
+		$('.phonenumber-group').hide();
+		$('input[type=radio][name=exampleRadios]').change(function() {
+				if (this.value == 'mail') {
+						console.log("Allot Thai Gayo Bhai");
+						$('.mail-group').show();
+						$('.phonenumber-group').hide();
+				}
+			else if (this.value == 'phone') {
+						console.log("Transfer Thai Gayo");
+						$('.mail-group').hide();
+						$('.phonenumber-group').show();
+				}
 		});
+	});

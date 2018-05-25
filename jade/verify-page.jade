@@ -1,0 +1,59 @@
+extends frame
+block append content
+	.index-content
+		.container
+			.row
+				.card
+					.col-sm-12.form(action="#" method="method").login
+						h4 CEP帐号注册安全验证
+						h5 为了保护帐号安全，需要验证邮箱有效性
+						p 点击发送邮件按钮，将会发送一封有验证码的邮件至邮箱
+							span.highlight 123****.com
+						.row
+							.col-sm-12.center
+								button.btn.btn-primary(type="submit") 发送邮件
+						.row
+							.col-sm-12.center
+								a(href="#") 换用其他验证方式
+			.row
+				.card
+					.col-sm-12.form(action="#" method="method").signup
+						h5 请重设您的帐号密码
+						.form-group
+							input.form-control(type='password', name='password' placeholder='请输入新密码' autofocus=true)
+						.form-group
+							input.form-control(type='password', name='verifypassword', placeholder="请输入确认密码")
+						.row
+							.col-sm-12.center
+								button.btn.btn-primary(type="submit") 提交
+			.row
+				.card
+					.col-sm-12.form(action="#" method="method").signup
+						h4 CEP帐号注册安全验证
+						h5
+							| 请使用安全手机
+							span.highlight 123***6762
+							| 获取验证码短信
+						.row
+							.col-sm-12.center
+								button.btn.btn-primary(type="submit") 发送短信
+						.row
+							.col-sm-12.center
+								a(href="#") 换用其他验证方式
+			.row
+				.card
+					.col-sm-12.form(action="#" method="method").signup
+						h4 CEP帐号注册安全验证
+						h5
+							| 请使用安全手机
+							span.highlight 123***6762
+							| 获取验证码短信
+						.input-group#smsVerifyCode
+							input.form-control(type='txt', name='smsVerifyCode',placeholder='请输入短信验证码')
+							button.btn.btn-primary(type="submit", disabled) 發送中
+						.row
+							.col-sm-12.center
+								button.btn.btn-primary(type="submit") 确定
+						.row
+							.col-sm-12.center
+								a(href="#") 换用其他验证方式
